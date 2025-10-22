@@ -10,33 +10,31 @@ body {
     margin: 50px auto;
     padding: 20px;
     display: flex;
-    gap: 40px;
-    background-color: #ffffff;
+    gap: 50px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-/* Product Photo */
+/* Left column: Main photo */
 .product__photo {
     flex: 1;
-}
-
-.photo-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photo-main img {
     width: 300px;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .photo-album ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
-    margin: 10px 0 0 0;
+    display: flex;
     gap: 10px;
 }
 
@@ -48,7 +46,7 @@ body {
     border: 1px solid #ccc;
 }
 
-/* Product Details */
+/* Right column: Product details */
 .product-details {
     flex: 1;
     display: flex;
@@ -56,14 +54,20 @@ body {
     gap: 20px;
 }
 
+.product-name {
+    margin: 0;
+    font-size: 28px;
+}
+
 .price {
     font-size: 24px;
     font-weight: bold;
     color: #e74c3c;
+    margin: 0;
 }
 
 .variant h3 {
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .variant ul {
@@ -76,13 +80,12 @@ body {
 .variant ul li img {
     width: 50px;
     height: auto;
-    cursor: pointer;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
 
 .description h3 {
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .description p {
@@ -99,4 +102,5 @@ body {
     font-size: 16px;
     font-weight: bold;
     width: 200px;
+    align-self: start;
 }
